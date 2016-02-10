@@ -4,3 +4,4 @@ url: https://imoneza.github.io
 
 # Build settings
 markdown: kramdown
+exclude: ['README.md']
