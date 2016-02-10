@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row" id="top-bar">
+      <div class="col-xs-12 text-right">
+        <a href="http://imoneza.com">iMoneza.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="/images/imoneza-logo.png" alt="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Documentation</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plugins <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Wordpress</a></li>
+                  <li><a href="#">Drupal</a></li>
+                  <li><a href="#">Joomla</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Request One</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <main class="container">
+    {{ content }}
+  </main>
+  <footer class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        &copy; 2016 iMoneza LLC
+      </div>
+      <div class="col-xs-6 text-right">
+        <a href="/">Github Home</a> | <a href="http://imoneza.com">iMoneza.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

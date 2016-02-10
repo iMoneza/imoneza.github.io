@@ -1,0 +1,6 @@
+# Site settings
+title: iMoneza
+url: https://imoneza.github.io
+
+# Build settings
+markdown: kramdown
