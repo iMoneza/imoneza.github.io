@@ -27,6 +27,10 @@ body {
 #top-bar a:hover {
     color: #ffffff;
 }
+header {
+    background: #ffffff;
+    padding: 1rem 0;
+}
 
 .navbar {
     margin-bottom: 0;
