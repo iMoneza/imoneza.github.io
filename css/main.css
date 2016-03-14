@@ -38,6 +38,9 @@ header {
 .navbar-brand {
     padding: 7px;
 }
+.navbar-brand > img {
+    height: 35px;
+}
 
 main {
     background: #ffffff;
