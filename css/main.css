@@ -51,6 +51,8 @@ main {
 }
 .btn:not(.btn-default) {
     border: 0;
+}
+.btn {
     border-radius: 2px;
 }
 .btn-primary {
