@@ -63,6 +63,9 @@ main {
 .fa.large-logo {
     font-size: 6rem;
 }
+img.large-logo {
+    height: 4rem;
+}
 footer {
     background-color: #252525;
     color: #777777;
